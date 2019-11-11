@@ -7,6 +7,7 @@ This is a multi-line comment
 # declare variable/print statement
 
 age = 32
+age2 = 64
 name = "yael"
 
 print("Hello my name is {} and I am {} years old.".format(name, age))
@@ -26,14 +27,14 @@ else:
 def hello():
     print("hello function")
 
+
 hello()
 hello()
+
 
 def defaultValues(name2="yaelster", age2=0):
     print("name2 is {} and age2 is {}".format(name2, age2))
 
+
 defaultValues()
 defaultValues("bob", 12)
-
-
-
