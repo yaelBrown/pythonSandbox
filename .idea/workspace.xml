@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aac30681-72d6-44b0-9e16-e279b530bc3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pythonSandbox.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Untitled Folder/.ipynb_checkpoints/myfirstnotebook-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Untitled Folder/.ipynb_checkpoints/myfirstnotebook-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Untitled Folder/myfirstnotebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Untitled Folder/myfirstnotebook.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="aac30681-72d6-44b0-9e16-e279b530bc3f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +25,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1263" />
-    <option name="y" value="871" />
+    <option name="x" value="-1647" />
+    <option name="y" value="80" />
     <option name="width" value="1388" />
     <option name="height" value="1088" />
   </component>
@@ -97,15 +90,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1263" y="871" width="1388" height="1088" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1647" y="80" width="1388" height="1088" extended-state="0" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15555556" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15555556" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32984293" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32984293" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />

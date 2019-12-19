@@ -1,0 +1,110 @@
+Large collection of python notes. 
+  Jupyter Notebook
+    type its name in command prompt opens jupyter notebook
+
+  print("something")
+    prints to console.
+
+  # are comments
+
+  type() 
+    gets the data type of whatever you pass into the method
+
+    NoneType is none (absence of value)
+
+Strings are immutable
+  you can't use indexing to change individual elements of a string
+  String objects do not support item assignment. 
+  Dont support item assignment. 
+
+  Immutability is when you cannot change the object itself when manipulating it. 
+    You would have to create another object with the changes. 
+
+  # are comments
+
+  a = "string"
+
+  a[::-1] 
+    reverses the string 
+    "gnirts"
+
+  a[1:]
+    after first char to end of the world
+    #tring
+
+  # String multiplication
+  letter = 'z'
+
+  letter * 10
+    # 'zzzzzzzzzz'
+
+  #string formatting
+  .format()
+  f-strings
+
+  n = "Yael"
+  print('Hello, my name is {}'.format(n))
+  
+  # Hello, my name is Yael
+
+
+  # formatting floating point numbers
+  # float formatting follows "{value:width.precision f}"
+  # width is the whitespace
+  #   https://pyformat.info/
+
+  result = 100/777
+  print(result)
+  print("The result was {r:1.3f}".format(r=result))
+    0.1287001287001287
+    The result was 0.129
+
+  # f strings
+  print(f'Hello, his name is {n}'')
+
+
+
+Lists (arrays in python)
+  support indexing and
+  lists are mutable 
+  supports multidemensional arrays
+  can have multiple object types
+
+  # can concatenate lists
+
+  l1 = ['one', 'two', 'three']
+  l2 = ['four', 'five', 'six']
+  l1 + l2
+
+  ['one', 'two', 'three', 'four', 'five', 'six']
+
+  # add to end of list. Similar to .push in js
+  l1.append('addition')
+
+  # pop, removes items from the end of the list and returns that object
+  # by default index location is -1
+  l1.pop()
+  popped_item = l1.pop()
+  popped_item
+
+  # sorting is done by .sort() (like js)
+  # does not return a list, just sorts it in the current lists
+
+  # reversing is done by .reverse() (like js)
+  # does not return a list
+
+
+
+Dictionaries 
+  Are objects retrieved by key name
+    (lists are retrieved by index position)
+  Unordered and cannot be sorted
+  Formatting is similar to json
+  Can support multidemensional dictionaries
+
+  # calling items in dict
+  newDict = {"a": 1, "b": 2}
+
+  newDict["a"]
+    1
+
