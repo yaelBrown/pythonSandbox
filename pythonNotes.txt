@@ -98,9 +98,12 @@ Lists (arrays in python)
 Dictionaries 
   Are objects retrieved by key name
     (lists are retrieved by index position)
+  Are mutable like Lists
   Unordered and cannot be sorted
   Formatting is similar to json
   Can support multidemensional dictionaries
+
+  ordereddict object can support sorting in dictionaries.
 
   # calling items in dict
   newDict = {"a": 1, "b": 2}
@@ -108,3 +111,6 @@ Dictionaries
   newDict["a"]
     1
 
+
+
+Tuples
