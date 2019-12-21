@@ -5,15 +5,41 @@ Large collection of python notes.
   Ctrl+Alt+N
     Runs code in vscode with Code Runner Extension
 
-  print("something")
-    prints to console.
+  Basic Practice:
+    http://codingbat.com/python
+  More Mathematical (and Harder) Practice:
+    https://projecteuler.net/archives
+  List of Practice Problems:
+    http://www.codeabbey.com/index/task_list
+  A SubReddit Devoted to Daily Practice Problems:
+    https://www.reddit.com/r/dailyprogrammer
+  A very tricky website with very few hints and touch problems (Not for beginners but still interesting)
+    http://www.pythonchallenge.com/
+
+  py -3 -m venv [folderName]
+    Creates Virtual Environment
+    -3 is version of python
+    -m is module you want to install
+      venv virtual Environment
+    [folderName is the name of the folder you want to create]
+
+  requirements.txt
+    a list of dependencies application will need to function properly
+      (similar to package.json)
+    pip install -r requirements.txt
+      installs all the dependencies. (similar to npm install command)
 
   # are comments
+
+  print("something")
+    prints to console.
 
   type()
     gets the data type of whatever you pass into the method
 
     NoneType is none (absence of value)
+
+
 
 Strings are immutable
   you can't use indexing to change individual elements of a string
@@ -119,3 +145,75 @@ Dictionaries
 Tuples
   Similar to lists but are immutable.
     Once element inside of a tuple it, cannot be reassigned.
+    tuple object does not support item assignment
+  uses parenthesis
+  You won't use tuples often
+    You use tuples for when you pass around objects in your program that you don't want to get accidentally changed.
+    Data integrity
+  Does not have a lot of methods for tuples
+
+
+  t[0]
+    calls first value of tuple. Similar to list/(arrays in js)
+  t.count('val')
+    counts how many times 'val' appears in tuple.
+
+
+
+Sets
+  unorder collections of unique elements
+  similar to arrayLists in Java.
+
+
+
+Booleans
+  first letter of True or False has to be capitalize
+
+
+
+FileIO
+  %%write myfile.txt
+    writes a text file with jupyter notebook
+
+  open('[path]')
+    opens file
+    (does not work with extension, use python filename.py command)
+    provide full file path to open a file somewhere else on your system.
+  open('[path]',mode='val')
+    mode='r' - read only
+    mode='w' - write only
+    mode='a' - append only
+    mode='r+' - reading and writing
+    mode='w+' - writing and reading (overwrites exisiting files or creates a new file)
+
+  f.ready()
+    Returns output of the file.
+  f.seek(0)
+    resets the read cursor to beginning of the file
+  f.readlines()
+    creates a list with each line on the list.
+
+  f.close()
+    closes file so you don't get errors elsewhere in your operating system.
+
+  f.write()
+    writes to the file
+    cursor is at the end of the document
+
+  with
+    with keyword is like define? but does not define a method?
+
+
+
+Comparison operatiors
+  Same as javascript except with out ===
+  == is the same as js ===
+
+
+
+Logical operatiors
+  and keyword instead of &&
+  or keyword instead of ||
+  not keyword negates the comparison operator
+    (not 1 == 1) is equal to (1 != 1)
+
