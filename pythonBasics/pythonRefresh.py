@@ -35,6 +35,22 @@ hello()
 def defaultValues(name2="yaelster", age2=0):
     print("name2 is {} and age2 is {}".format(name2, age2))
 
+print("=====")
 
-defaultValues()
-defaultValues("bob", 12)
+t = (1,2,3)
+print(type(t))
+print(t[2])
+
+
+mySet = set()
+mySet.add('Yael')
+mySet.add('Cookie')
+
+print(mySet)
+
+set2 = set([1,1,2,3])
+print(set2)
+
+
+
+f = open('test.txt')

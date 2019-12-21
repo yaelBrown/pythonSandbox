@@ -1,31 +1,34 @@
-Large collection of python notes. 
+Large collection of python notes.
   Jupyter Notebook
     type its name in command prompt opens jupyter notebook
+
+  Ctrl+Alt+N
+    Runs code in vscode with Code Runner Extension
 
   print("something")
     prints to console.
 
   # are comments
 
-  type() 
+  type()
     gets the data type of whatever you pass into the method
 
     NoneType is none (absence of value)
 
 Strings are immutable
   you can't use indexing to change individual elements of a string
-  String objects do not support item assignment. 
-  Dont support item assignment. 
+  String objects do not support item assignment.
+  Dont support item assignment.
 
-  Immutability is when you cannot change the object itself when manipulating it. 
-    You would have to create another object with the changes. 
+  Immutability is when you cannot change the object itself when manipulating it.
+    You would have to create another object with the changes.
 
   # are comments
 
   a = "string"
 
-  a[::-1] 
-    reverses the string 
+  a[::-1]
+    reverses the string
     "gnirts"
 
   a[1:]
@@ -44,7 +47,7 @@ Strings are immutable
 
   n = "Yael"
   print('Hello, my name is {}'.format(n))
-  
+
   # Hello, my name is Yael
 
 
@@ -66,7 +69,7 @@ Strings are immutable
 
 Lists (arrays in python)
   support indexing and
-  lists are mutable 
+  lists are mutable
   supports multidemensional arrays
   can have multiple object types
 
@@ -95,7 +98,7 @@ Lists (arrays in python)
 
 
 
-Dictionaries 
+Dictionaries
   Are objects retrieved by key name
     (lists are retrieved by index position)
   Are mutable like Lists
@@ -114,3 +117,5 @@ Dictionaries
 
 
 Tuples
+  Similar to lists but are immutable.
+    Once element inside of a tuple it, cannot be reassigned.
