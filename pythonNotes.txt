@@ -217,3 +217,110 @@ Logical operatiors
   not keyword negates the comparison operator
     (not 1 == 1) is equal to (1 != 1)
 
+Control flow
+  if, Elif and Else
+
+  if some_condition:
+    # execute some code
+  elif some_other_condition:
+    # execute some code
+  else:
+    # do something else
+
+  For loops are similar to map function in js and forEach in Java
+  for var in List:
+    # do something
+
+  Common to use _ for forloop if don't plan on using the variable within the loop.
+  for _ in myL:
+    print("Cool!")
+  can iterate over tuples as well.
+
+  Tuple unpacking - duplicate the structure in the list and you do something with them.
+  Can iterate thru a dictionary as well.
+  obj = {'k1': 1, 'k2': 2, 'k3': 3}
+
+  for val in obj.values():
+    print(val)
+
+  for k in obj.keys():
+    print(k)
+
+  while some_boolean_condition:
+    # do something
+  else:
+    # do something else
+
+  Kernel > interrupt / restart
+    If jupyter notebook gets into endless loop
+
+  break - breaks out of the current closest enclosing loop
+    similar to break to javascript
+    exits the loop
+  continue - goes to the top of the closest enclosing loop
+    similar to continue in javascript
+    skips the iteration and continues the loop
+  pass - does nothing at all
+    pass is used for prevent eof (end of file) errors.
+    Can write a for loop and not add any code to execute (to come back later)
+
+  Special Operatorss
+    range([start], [stop], [step-size])
+      used in a for loop prints the range of from start to stop.
+        Can change the increment value with step size. (can go up by 2, 3 or 4) default is 1.
+
+      for num in range(0,11,2):
+        print(num)
+
+      list(range(0,11,2)) # casting numbers to a list.
+
+      Range is a generator
+        Generator is a special type of function that will generate information instead of save it all to memory
+
+    enumerate(str)
+      Return index count along with value when used in for loop in a tuple
+      list(enumerate(str)) # casting tuples to a list
+
+    zip(list1, list2)
+      combines to lists for iteration
+      if you run zip a lone, it returns the generated zip's memory address
+      returns list a list of tuples
+
+      will only display as far back as the list that is the shortest
+        list 1 = 5 items
+        list 2 = 3 items
+        zip will print out 3 items.
+
+      list(zip(list1, list2)) # can be casted to a list
+
+    in [keyword operator]
+      similar to indexOf in js. Except that it returns a boolean like .contains in javascript
+      used a lot when working with strings
+
+    min(list)
+      shows minimum value in a list
+
+    max(list)
+      shows maximum value in a list
+
+    shuffle(list)
+      from random [package] import shuffle
+      randomizes items in a list.
+      does not return anything
+
+    randint(min, max)
+      returns a random number with min and max.
+      similar to javascript Math.Random()
+
+    input('str')
+      Accepts input from user
+      accepts everything as a string.
+      Can be wrapped for casting.
+
+
+
+List Comprehensions
+
+
+
+

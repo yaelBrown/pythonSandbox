@@ -53,4 +53,46 @@ print(set2)
 
 
 
-f = open('test.txt')
+# f = open('test.txt')
+
+
+print("=========")
+
+loc = 'home'
+# loc = 'sumthin else'
+
+if loc == 'home':
+    print("Feels good to be home")
+else:
+    print("I will eventually get home")
+
+myL = [1,2,3,4,5,6,7,8,9]
+sum = 0
+
+for num in myL:
+    print(num)
+    sum += num
+
+print(sum)
+
+for _ in myL:
+    print("Cool!")
+
+# tuple unpacking
+myL2 = [(1,2), (3,4), (5,6), (7,8)]
+
+for a,b in myL2:
+    print(a)
+    print(b)
+
+print("=======")
+
+# iterate thru a dictionary
+obj = {'k1': 1, 'k2': 2, 'k3': 3}
+
+for val in obj.values():
+    print(val)
+
+for k in obj.keys():
+    print(k)
+
