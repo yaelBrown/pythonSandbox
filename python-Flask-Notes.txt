@@ -1,0 +1,13 @@
+Python Flask framework
+  Flask is usually used as a restful API
+
+  pip install flask 
+    install flask
+    recommended install in a virtual environemt
+
+  (Add boilerplate from usefulPython/)
+
+  python server.py
+    http://localhost:5000/
+
+  
