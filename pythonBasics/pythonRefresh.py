@@ -96,3 +96,18 @@ for val in obj.values():
 for k in obj.keys():
     print(k)
 
+# list comprehension
+anothrL = []
+anothrL2 = []
+anothrStr = 'cookies'
+
+for l in anothrStr:
+    anothrL.append(l)
+
+anothrL2 = [ l for l in anothrStr]
+
+
+def myfunc(n):
+    print(f'My name is {n}')
+
+myfunc("yael")

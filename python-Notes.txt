@@ -30,6 +30,9 @@ Large collection of python notes.
       installs all the dependencies. (similar to npm install command)
 
   # are comments
+  '''
+  These are doc strings
+  '''
 
   print("something")
     prints to console.
@@ -39,6 +42,8 @@ Large collection of python notes.
 
     NoneType is none (absence of value)
 
+  help()
+    returns documentation on whats in the parameter
 
 
 Strings are immutable
@@ -89,7 +94,7 @@ Strings are immutable
     The result was 0.129
 
   # f strings
-  print(f'Hello, his name is {n}'')
+  print(f'Hello, his name is {n}')
 
 
 
@@ -320,7 +325,51 @@ Control flow
 
 
 List Comprehensions
+  flattened for loops
+    celcius = [0,10,20,34.5]
+    fahrenheit = [((9/5) * temp + 32) for temp in celcius]
+    append is implied in flattened for loops
+
+    if else statements are reverse order
+    results = [x if x % 2 == 0 else 'ODD' for x in range(0,11)]
+
+    can do nested loops
+    results = [x*y for x in [2,4,6,] for y in [1,10,1000]]
+
+    Always try to do readibility first.
 
 
 
+Methods
+  def name_of_function():
+    print("some code")
 
+  How to document methods
+    '''
+    DOCSTRING: Information about the function
+    INPUT: no input...
+    OUTPUT: Hello
+    '''
+
+  positional arguments - the name given to arguments of a method where the first item will be first variable in method. Second argument is the second variable etc. Based off of position they are in the parameters of the method.
+
+  def func(a,b,c=0,d=0,e=0):
+
+  *args - arguments
+    Allows you take a arbitrary number of arguments
+    Arguments will be treated as a tuple inside of the function
+    def func(*args):
+
+  **kwargs - keyword arguments
+    arbitrary number of keyword arguments
+    treats it as a dictionary as a input.
+    def func(**kwargs):
+    func(a=1, b=2):
+
+  args and kwargs can be used in combination
+    Useful to be used outside of arguments
+    func(*args, **kwargs):
+    func(1,2,3,4,5,6,a=1,b=2,c=3)
+
+  Lambda Expressions - Map and Filter
+    Way to create anonymous functions that are used only once.
