@@ -336,7 +336,7 @@ List Comprehensions
     can do nested loops
     results = [x*y for x in [2,4,6,] for y in [1,10,1000]]
 
-    Always try to do readibility first.
+    Always try to do readability first.
 
 
 
@@ -373,3 +373,8 @@ Methods
 
   Lambda Expressions - Map and Filter
     Way to create anonymous functions that are used only once.
+
+    map - map(func, iter) - used to replace the for loop, with less code. Allows you to run a method on each item in the iter.
+      can cast into list, by wrapping list() around it.
+
+    filter - returns a iterable when the items passed in the function are True.

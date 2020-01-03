@@ -111,3 +111,25 @@ def myfunc(n):
     print(f'My name is {n}')
 
 myfunc("yael")
+
+
+
+print("==========")
+
+# map function
+def square(n):
+    return num**2
+
+my_nums = [1,2,3,4,5]
+
+for item in map(square, my_nums):
+    print(item)
+
+# filter function
+def isEven(n):
+    return n%2 == 0
+
+my_nums2 = [1,2,3,4,5,6]
+
+list(filter(isEven, my_nums2)) # only even numbers will be added to list
+
