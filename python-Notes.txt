@@ -411,3 +411,26 @@ Methods
     global - keyword used within another scope can change the global variable value
       Not recommended.
 
+
+
+OOP
+  __init__ - constructor
+  __str__ - equal to toString method
+  __len__ - equal to .length() method
+  __del__ - deletes the object
+
+  method - is a function that inside of a class that will work with the object in some Way
+  method overloading - is done by setting default value of none.
+
+  Inheritance
+    child classes are called derived classes.
+
+  Polymorphism
+    Won't really use it much in Python
+
+  Abstraction
+    Class thats not expected to be instantiated on, designed to be a base class.
+
+  Encapsulation
+    Defining variables with dunder, will make them private
+    __privateVar
