@@ -5,6 +5,25 @@ Large collection of python notes.
   Ctrl+Alt+N
     Runs code in vscode with Code Runner Extension
 
+  PyPi repo for open-source third party packages
+    rubygems in rubygems
+    php packagist
+    cpan for properly
+    npm for node
+
+    internal libraries are known as standard libraries
+
+    use pip to install
+
+    pip install
+      colorama - allows you to add color to items in command line
+      requests - allows you make http requests with python
+      openpyxl - use excel files in python
+      pylint - checks code and reports possible errors
+        pylint not recognized in w10
+          add address to path variable in w10
+          https://www.youtube.com/watch?v=i4yJi-cpwWk
+
   Basic Practice:
     http://codingbat.com/python
   More Mathematical (and Harder) Practice:
@@ -48,6 +67,8 @@ Large collection of python notes.
   dir()
     returns a list of methods that can be used with datatypes/variables w/e
     help(set().add)
+
+All code implicitly at indentation level 0 gets ran.
 
 Strings are immutable
   you can't use indexing to change individual elements of a string
@@ -434,3 +455,46 @@ OOP
   Encapsulation
     Defining variables with dunder, will make them private
     __privateVar
+
+
+
+Create own modules in packages in Python
+  Modules - is .py script to use in another .py
+  __name__ - gets assigned a name depending on how you are running the script.
+    this var gets assigned in the background
+    if __name__ == "__main__" - if true, it means you are running the .py file directly.
+
+  __main__ - name of the file being ran. Implicitly set by python
+
+
+
+Errors and Exception handling
+  try - this will try and run your code
+  except - will do something if it catches an error
+  else - else block will run if there are no errors. If there is an error it will not run.
+    (means theres is no exception)
+  finally - will run regardless of an error.
+    wise to add function calls here.
+
+  raise - errors are not 'called' in python they are 'raised'
+
+  different types of errors and exceptions
+    syntax errors - errors with syntax
+    exceptions - error when attempt to execute. Syntax is correct
+      https://docs.python.org/3/library/exceptions.html#bltin-exceptions
+        List of python built in exceptions
+
+
+
+Unit Testing
+  pylint - library that looks at your code and reports possible issues
+    mainly for working with other people or an organization
+    Styling rules are known as PEP8
+      https://www.python.org/dev/peps/pep-0008/
+      python3 disallowed the use of tabs and spaces for indentation
+        use spaces instead of tabs
+    pylint not recognized in w10
+      add address to path variable in w10
+      https://www.youtube.com/watch?v=i4yJi-cpwWk
+  unittest - built-in library will allow you to test your own programs and check you are getting desired outputs
+    You wil create a test class.
