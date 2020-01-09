@@ -120,6 +120,8 @@ Strings are immutable
   # f strings
   print(f'Hello, his name is {n}')
 
+  .capitalize() - capitalizes first letter
+  .title() - capitalizes every first letter of the word
 
 
 Lists (arrays in python)
@@ -498,3 +500,44 @@ Unit Testing
       https://www.youtube.com/watch?v=i4yJi-cpwWk
   unittest - built-in library will allow you to test your own programs and check you are getting desired outputs
     You wil create a test class.
+    Best to go from simple to complex.
+
+
+
+Python Decorators
+  Decorate a function - on/off switch to add new code (functionality) to a function.
+    allow you to tack on extra functionality to an already exisiting function
+    use @ operators placed on top of the original function
+      annotations like in Java ?
+
+  functions are objects that can be passed into other objects
+  can define function inside of a function
+
+  @annotation - the annotation has to be the name of a function that takes a function as a argument
+    really common in web frameworks like django or flask
+
+  decorates the function with some extra code.
+
+
+
+Generators
+  Allows you to write a function that can send a value back and then later resume to pick up where it left off
+  Generate a sequence of values overtime.
+
+  example would be the range function
+    keeps track of the last number it returned and the step size.
+    Does not create a giant list in memory.
+
+  yield - keyword that returns a value instead of storing it in memory.
+    allows you to iterate thru loops
+    create own generators using yield
+
+  next - What for-loops use to call the next value
+  iterator - (iter()) allows you to interate thru objects
+
+  string objects support iter, but cannot be interated over with next() function
+    Have to convert objects that are iterable to iter
+
+  generator expressions - are faster than list comprehension
+  generator comprehension - https://www.pythonlikeyoumeanit.com/Module2_EssentialsOfPython/Generators_and_Comprehensions.html
+
