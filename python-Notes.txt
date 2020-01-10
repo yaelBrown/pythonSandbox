@@ -23,6 +23,8 @@ Large collection of python notes.
         pylint not recognized in w10
           add address to path variable in w10
           https://www.youtube.com/watch?v=i4yJi-cpwWk
+      black - Python code formatter.
+        https://www.youtube.com/watch?v=esZLCuWs_2Y&feature=youtu.be
 
   Basic Practice:
     http://codingbat.com/python
@@ -47,6 +49,9 @@ Large collection of python notes.
       (similar to package.json)
     pip install -r requirements.txt
       installs all the dependencies. (similar to npm install command)
+
+  ast - abstract syntax tree - similar to a DOM tree but for python code in a file.
+    This is how the interpreter views python code.
 
   # are comments
   '''
