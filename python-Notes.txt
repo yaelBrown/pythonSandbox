@@ -568,3 +568,51 @@ Collections
     Counter(dict(list_of_pairs))    # convert from a list of (elem, cnt) pairs
     c.most_common()[:-n-1:-1]       # n least common elements
     c += Counter()                  # remove zero and negative counts
+
+
+  defaultdict - all methods provided by dicionary but takes first argument (default_factory) as default datatype for the dictionary.
+    faster than using dict.set_default method
+    Will never raise a KeyError
+      any key that does not exist gets the value returned by the default factory
+
+
+  orderedDict - remembers the order in which its contents are added
+    normal dictionary is a mapping, does not retain order
+
+
+  namedtuple - assigns names to numerical index in the tuple
+    like normal tuple, and assigns object type
+    namedtuple('name of class', 'param1 param2 param3')
+    sub class of tuple
+
+
+
+Dateime
+  builtin module to work with date and time.
+    manages timezone information
+
+    datetime.time()
+      https://docs.python.org/2/library/datetime.html#time-objects
+
+  tzinfo - Timezone information
+  datetime.date.today().timetuple()
+    returns a tuple of information in that time instance
+
+  doing arithmetic with time will return the timedelta
+
+
+
+pdb
+  interactive debugger for python programs
+  pythons built in debugger
+  not taught to beginners at all
+
+  (Pdb) q
+    will quit the debugger
+
+  https://docs.python.org/3/library/pdb.html
+
+
+
+timeit
+  Times your code execution
