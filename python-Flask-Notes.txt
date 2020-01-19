@@ -1,13 +1,35 @@
 Python Flask framework
   Flask is usually used as a restful API
+  API - a program that takes in some data and gives back some other data, usually after processing it.
+    For example, Twitter Search. Twitter search accepts data (the search parameters), processes it (finds the tweets that match those parameters), and sends data back (the tweets themselves).
+    If you are a user of the Twitter Search API, you can send them the search parameters and you get back the tweets.
+  REST - Representational State Transfer
+    A way of thinking of how server responds to requests
+    Returns resources
+    Stateless - one request cannot depend on other requests
+      Server only knows about the current request and not any previous requests
 
-  pip install flask 
+  https://github.com/schoolofcode-me/rest-api-sections/tree/master/section3
+
+  pip install flask
+    (pip3 or pip3.5 etc install flask)
     install flask
-    recommended install in a virtual environemt
+    recommended install in a virtual environment
+
+    WSGI - Web Server Gateway Interface
+      Python standard described in detail in PEP 3333
+      describes how a web server communicates with web applications, and how web applications can be chained together to process one request
 
   (Add boilerplate from usefulPython/)
 
   python server.py
     http://localhost:5000/
 
-  
+  @app.route()
+    by default are GET requests
+    Need to add method=['POST'] in parameter for other verbs
+
+  from flask import jsonify - similar to GSON and Jackson
+    jsonify - creates json data for output.
+      return jsonify({"output": "content"})
+      json always returns double quotes never single quotes

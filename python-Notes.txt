@@ -168,6 +168,8 @@ Dictionaries
   Formatting is similar to json
   Can support multidemensional dictionaries
 
+  dictionaries are not ordered they are sets.
+
   ordereddict object can support sorting in dictionaries.
 
   # calling items in dict
@@ -363,6 +365,13 @@ Control flow
 
 
 List Comprehensions
+  [expression for item in list]
+    https://www.programiz.com/python-programming/list-comprehension
+  [ expression for item in list if conditional ]
+    List comprehension with if statement
+    [s for s in stores if s["name"] == name]
+    https://stackoverflow.com/questions/4406389/if-else-in-a-list-comprehension
+
   flattened for loops
     celcius = [0,10,20,34.5]
     fahrenheit = [((9/5) * temp + 32) for temp in celcius]
@@ -510,6 +519,7 @@ Unit Testing
 
 
 Python Decorators
+  Docorators = java annotations
   Decorate a function - on/off switch to add new code (functionality) to a function.
     allow you to tack on extra functionality to an already exisiting function
     use @ operators placed on top of the original function
