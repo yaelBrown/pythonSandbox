@@ -626,3 +626,23 @@ pdb
 
 timeit
   Times your code execution
+  timeit.time( # expression as a string, number of times you want to run it)
+    returns the time in seconds.
+
+  significant time difference using map
+
+  https://docs.python.org/2/library/timeit.html
+
+
+
+StringIO
+  implements an in-memory file like object.
+    can be used as input or output to most functions that would expect a standard file object
+    usually used for scraping from the web. 
+
+  Can convert strings and read and write to them as if they were files
+
+  https://docs.python.org/2/library/stringio.html
+
+  cStringIO - faster implementation of stringio
+
