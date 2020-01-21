@@ -8,6 +8,7 @@ Python Flask framework
     Returns resources
     Stateless - one request cannot depend on other requests
       Server only knows about the current request and not any previous requests
+  Jinja - templating language
 
   https://github.com/schoolofcode-me/rest-api-sections/tree/master/section3
 
@@ -33,3 +34,34 @@ Python Flask framework
     jsonify - creates json data for output.
       return jsonify({"output": "content"})
       json always returns double quotes never single quotes
+
+
+
+  Flask-restful
+    https://github.com/schoolofcode-me/rest-api-sections/tree/master/section4
+    limited to only REST standard.
+
+    pip freeze
+      shows libraries currently installed and in use in current python environment
+    pip install virtualenv
+      tool used to create virtual environments
+    virtualenv venv --python=python3.8
+      will create a folder called venv and install python 3.8
+    source venv/bin/activate [mac]
+    ./venv/Scripts/activate.bat [win]
+      activates virutal environment
+    deactivate [mac]
+    ./venv/Scripts/deactivate.bat [win]
+      exits python virtual environment
+    pip install flask-restful
+      install flask-restful
+
+    Api works with resources and each resource has to be a class
+      You inherit Resource (package)
+
+    No JSONify when using flask-restful
+
+    HTTP status code: 201 = created
+      202 = Accepted
+        Will create later
+      Using correct status code is important
