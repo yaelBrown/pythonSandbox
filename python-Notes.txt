@@ -638,7 +638,7 @@ timeit
 StringIO
   implements an in-memory file like object.
     can be used as input or output to most functions that would expect a standard file object
-    usually used for scraping from the web. 
+    usually used for scraping from the web.
 
   Can convert strings and read and write to them as if they were files
 
@@ -646,3 +646,42 @@ StringIO
 
   cStringIO - faster implementation of stringio
 
+
+
+Regular Expressions
+  https://www.w3schools.com/python/python_regex.asp
+  https://docs.python.org/3/library/re.html
+
+  Similar in syntax to pearl
+  import re
+
+  re.search("")
+    returns a match object
+    if no pattern is returned, None is returned.
+
+  .start()
+    shows index of when the match begins
+
+  .ends()
+    shows index of when the match ends.
+
+  how to split domain names from a email address?
+    common interview question
+    re.split()
+
+  re.split([term], [phrase])
+    splits a phrase and returns a list by the term.
+
+  re.findall([term], [phrase])
+    returns a list of all the matches
+
+  meta-characters
+    r'' - designates the pattern
+    repetition sets
+    character sets
+    exclusion
+    character ranges
+    Escape codes
+
+  People usually refer to documentation when working with regex
+    completepython3bootcamp-files / 13-advancedPythonModules / 05-regular expressions
