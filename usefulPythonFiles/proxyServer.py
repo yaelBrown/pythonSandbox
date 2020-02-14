@@ -6,9 +6,11 @@ import requests
 app = Flask(__name__)
 CORS(app)
 
+url = "https://www.newegg.com"
+
 @app.route('/test', methods=['GET'])
 def getTest():
-  r = requests.get("http://localhost:5001/login", stream=True)
+  r = requests.get(url, stream=True)
   print(r)
   print("HEADERS=", r.headers)
   return Response(r.iter_content(chunk_size=10*1024),
