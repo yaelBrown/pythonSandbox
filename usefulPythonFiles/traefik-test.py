@@ -42,8 +42,9 @@ traefikOutput = [{'FE_Path': 'eWFlbC0xLW9wZXJhdG9yLTE', 'BE_Path': 'http://local
 
 if len(traefikOutput) == 1:
   # asdf
+  pass
 else:
-
+  pass
 
 
 print(len(traefikOutput))
