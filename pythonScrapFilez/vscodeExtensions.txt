@@ -1,0 +1,1 @@
+code --install-extension eamodio.gitlens kiteco.kite mauve.terraform ms-azuretools.vscode-docker ms-mssql.mssql ms-python.python octref.vetur ZainChen.json
