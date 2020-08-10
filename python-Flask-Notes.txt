@@ -68,3 +68,14 @@ Python Flask framework
       202 = Accepted
         Will create later
       Using correct status code is important
+
+
+  SQLAlchemy
+    Create resources and models folder
+      add __init__.py file in these folders
+
+    @classmethod - annotation that is only used for the class. 
+      Not directed interacted with by the client
+
+    Methods in a file should be separated by 1 line. 
+    Classes in a file should be separated by 2 lines. 
