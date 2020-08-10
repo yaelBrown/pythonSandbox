@@ -36,6 +36,8 @@ Large collection of python notes.
     https://www.reddit.com/r/dailyprogrammer
   A very tricky website with very few hints and touch problems (Not for beginners but still interesting)
     http://www.pythonchallenge.com/
+  PEP-8 Style guide
+    https://www.python.org/dev/peps/pep-0008/
 
   py -3 -m venv [folderName]
     Creates Virtual Environment
@@ -73,7 +75,86 @@ Large collection of python notes.
     returns a list of methods that can be used with datatypes/variables w/e
     help(set().add)
 
+  Mutable - types that can be changed without have to be recreated in memory
+
+  Immutable - types that cannot be changed and are pointers to a stored object in memory. 
+
+  Callables - Are anything that can be called
+    user-defined functions
+    generators
+    classes
+    instance methods
+  
+  Singletons - objects
+    None
+    NotImplemented
+    ellipsise
+
+
 All code implicitly at indentation level 0 gets ran.
+
+variables
+  variable names should be snake_case
+
+  _myVar - Single underscore indicates 'internal use' or 'private'
+    Objects named this way will not get imported by a statement such as: 
+      from module import *
+  
+  __myVar - Double underscore aka 'dunder' Used to "mangle" class attributes - use in inheritance chains
+
+  __myVar__ - Double dunder are system-defined names that have a special meaning to the interpreter
+    Dont invite variables, stick to python pre-defined
+      '__all__'
+      '__args__'
+      '__author__'
+      '__bases__'
+      '__builtin__'
+      '__builtins__'
+      '__cached__'
+      '__call__'
+      '__class__'
+      '__copy__'
+      '__credits__'
+      '__date__'
+      '__decimal_context__'
+      '__deepcopy__'
+      '__dict__'
+      '__doc__'
+      '__exception__'
+      '__file__'
+      '__flags__'
+      '__ge__'
+      '__getinitargs__'
+      '__getstate__'
+      '__gt__'
+      '__import__'
+      '__importer__'
+      '__init__'
+      '__ispkg__'
+      '__iter__'
+      '__le__'
+      '__len__'
+      '__loader__'
+      '__lt__'
+      '__main__'
+      '__module__'
+      '__mro__'
+      '__name__'
+      '__package__'
+      '__path__'
+      '__pkgdir__'
+      '__return__'
+      '__safe_for_unpickling__'
+      '__setstate__'
+      '__slots__'
+      '__temp__'
+      '__test__'
+      '__version__' 
+
+  Method/function names should use snake-case not camel case
+    def method_name:
+    var_name = "snake case"
+
 
 Strings are immutable
   you can't use indexing to change individual elements of a string
@@ -291,10 +372,11 @@ Control flow
   for k in obj.keys():
     print(k)
 
-  while some_boolean_condition:
-    # do something
-  else:
-    # do something else
+  While-loops have else statement like if-else (elif)
+    while some_boolean_condition:
+      # do something
+    else:
+      # do something else
 
   Kernel > interrupt / restart
     If jupyter notebook gets into endless loop
@@ -308,6 +390,10 @@ Control flow
   pass - does nothing at all
     pass is used for prevent eof (end of file) errors.
     Can write a for loop and not add any code to execute (to come back later)
+
+  Python has a ternary operator
+    a = 25
+    b = 'a < 5' if a < 5 else 'a >= 5'
 
   Special Operatorss
     range([start], [stop], [step-size])
@@ -398,6 +484,10 @@ Methods
     OUTPUT: Hello
     '''
 
+  def func(a: int, b: int): - Helps the dev know what datatype to use, but does not stop you from using other datatypes
+    func(2,3) # 6
+    func("cookies", 2) # cookies cookies
+
   positional arguments - the name given to arguments of a method where the first item will be first variable in method. Second argument is the second variable etc. Based off of position they are in the parameters of the method.
 
   def func(a,b,c=0,d=0,e=0):
@@ -410,13 +500,13 @@ Methods
   **kwargs - keyword arguments
     arbitrary number of keyword arguments
     treats it as a dictionary as a input.
-    def func(**kwargs):
-    func(a=1, b=2):
+      def func(**kwargs):
+      func(a=1, b=2):
 
   args and kwargs can be used in combination
     Useful to be used outside of arguments
-    func(*args, **kwargs):
-    func(1,2,3,4,5,6,a=1,b=2,c=3)
+      func(*args, **kwargs):
+      func(1,2,3,4,5,6,a=1,b=2,c=3)
 
   Lambda Expressions - Anonymous function - Map and Filter
     Way to create anonymous functions that are used only once.
@@ -685,3 +775,7 @@ Regular Expressions
 
   People usually refer to documentation when working with regex
     completepython3bootcamp-files / 13-advancedPythonModules / 05-regular expressions
+
+
+
+
