@@ -21,10 +21,40 @@ class Graph:
       if end not in self.verticies[start].neighbors:
         self.verticies[start].neighbors.append(end)
 
-      if not isDirected:
+      if not self.isDirected:
         if start not in self.verticies[end].neighbors:
           self.verticies[end].neighbors.append(start)
+  
+  def add_vertex(self, n):
+    if n not in self.verticies:
+      self.verticies[n] = Vertex(n)
 
+  def add_edge(self, u, v):
+    if u not in self.verticies:
+      self.verticies[u] = Vertex(u)
+
+    if v not in self.verticies:
+      self.verticies[v] = Vertex(v)
+
+    if v not in self.verticies[u].neighbors:
+      self.verticies[u].neighbors.append(v)
+
+      if not self.isDirected:
+        if u not in self.verticies[v].neighbors:
+          self.verticies[v].neighbors.append(u)
+
+  def del_vertex(self, v):
+    if v in self.verticies:
+      del self.verticies[v]
+
+  def del_edge(self, u, v):
+    if u in self.verticies:
+      if v in self.verticies[u].neighbors:
+        self.verticies[u].neighbors.remove(v)
+
+        if not self.isDirectedGraph:
+          if u in self.verticies[v].neighbors:
+            self.verticies[v].neighbors.remove(u)
 
   def printGraph(self):
     for k in self.verticies.items():
