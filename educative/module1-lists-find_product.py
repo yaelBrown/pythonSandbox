@@ -11,3 +11,11 @@ def find_product(lst):
         idx += 1
 
     return out
+
+
+def find_product(lst):
+    tot = 1
+    for i in lst: 
+        tot *= i
+
+    return [tot/num for num in lst]
