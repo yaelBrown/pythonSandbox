@@ -1,0 +1,21 @@
+AppMillers.com
+
+
+
+Recursion
+    calling application multiple times
+    base condition is needed to stop recursion
+
+    prominent usage in trees and graphs
+
+    used in many algorithms
+        div and conquier
+        greedy
+        dynamic programming
+
+    iteration is more space and time efficient
+
+    step 1: recursive case - the flow
+    step 2: base case - the stopping criterion
+    step 3: unintentional case - the constraint
+
