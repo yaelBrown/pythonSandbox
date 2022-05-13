@@ -19,3 +19,48 @@ class Solution:
             
         return out
 
+
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        start = end = 0
+        c = set()
+        c.add(s[start])
+        out = 0
+
+
+        while end < len(s): 
+            if s[end] not in c: 
+                c.add(s[end])
+            else: 
+                out = max(out, (end - start))
+                start = end
+                c = set()
+                c.add(s[start])
+
+            end += 1
+
+        return out
+
+
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        if len(s) is 0 or len(s) is 1: return len(s)
+        
+        start = end = 0
+        c = set()
+        out = 0
+
+        while end < len(s): 
+            print(s[end])
+            if s[end] not in c: 
+                c.add(s[end]) 
+                end += 1
+            else: 
+                out = max(out, end - start)
+                if start < (len(s) - 1):
+                    start += 1
+
+                c.add(s[start])
+                c.add(s[end])
+            end += 1        
+            
+        return out
