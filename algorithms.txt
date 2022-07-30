@@ -1,2 +1,0 @@
-Kadane's Algorithm - Find Maximum Sub-Array
-Floyds Cycle Finding Algorithm - Detect Loop in a Linked List

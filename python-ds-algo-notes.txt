@@ -1,0 +1,9 @@
+Kadane's Algorithm - Find Maximum Sub-Array
+Floyds Cycle Finding Algorithm - Detect Loop in a Linked List
+
+
+Recursion - When a method calls itself
+  3 steps
+    1. Recursive Case
+    2. Base case - the stopping criterion
+    3. Unintentional case - the constraint
