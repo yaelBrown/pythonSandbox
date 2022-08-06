@@ -1,6 +1,24 @@
 Kadane's Algorithm - Find Maximum Sub-Array
 Floyds Cycle Finding Algorithm - Detect Loop in a Linked List
 
+Time Complexity - lang and meth to describe efficiency of algos
+  time complexity increases when input increases
+
+  Asymptotic Analysis/Bounds
+    Big-O - Worst Case - less or equal to the worst case, (Maximum time)
+    Big-Omega - Best Case Scenario - at least more than the best case, (Best Time)
+    Big-Theta - Average Case Scenario - within bounds of the worst and best case scenarios (Average Time)
+
+    o(1) - constant
+    o(n) - linear
+    o(LogN) - Logarithmic
+    o(N2) - Quadratic
+    o(2n) - Exponential
+
+  Space Complexity
+    Amount of space needed for algorithm to Recursion
+    It's represented the same way as time complexity
+
 
 Recursion - When a method calls itself
   3 steps
