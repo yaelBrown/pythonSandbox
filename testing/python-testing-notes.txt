@@ -1,0 +1,13 @@
+Test files need to start with "test_*.py" naming convention
+
+Assert methods
+  https://docs.python.org/3/library/unittest.html#unittest.TestCase.debug
+
+run tests
+  python -m unittest test_calc.py
+
+
+tests should be isolated
+  tests should not rely on other tests
+
+other library called pytest
