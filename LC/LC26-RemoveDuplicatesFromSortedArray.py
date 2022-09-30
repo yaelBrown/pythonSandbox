@@ -34,3 +34,17 @@ class Solution:
         return 6
     
     # have to iterate and count the values, then swap them. 
+
+
+# basically recreating the list by swapping values but you are counting how many times you swapped values
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        l = 1
+        for s in range(1, len(nums)):
+            
+            print(s)
+            if nums[s] != nums[s-1]:
+                print({ "s-1": s-1, "s": s })
+                nums[l] = nums[s]
+                l += 1
+        return l
