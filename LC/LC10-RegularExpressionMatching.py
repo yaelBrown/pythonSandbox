@@ -14,3 +14,14 @@ class Solution:
             p.split()
             
         # ?
+
+
+"""
+Runtime: 182 ms, faster than 26.52% of Python3 online submissions for Regular Expression Matching.
+Memory Usage: 14.1 MB, less than 38.52% of Python3 online submissions for Regular Expression Matching.
+"""
+class Solution:
+    def isMatch(self, s: str, p: str) -> bool:
+        import re
+        res = re.findall(p, s)
+        return True if s in res else False
