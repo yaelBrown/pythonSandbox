@@ -48,3 +48,8 @@ class Solution:
                 nums[l] = nums[s]
                 l += 1
         return l
+
+    # shorthand
+    def removeDuplicates(self, nums: List[int]) -> int:
+        nums[:] = sorted(set(nums))
+        return len(nums)
